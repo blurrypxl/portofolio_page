@@ -363,6 +363,10 @@ body {
   height: 20em;
   margin-top: 1em;
   margin-bottom: 1em;
+  background-image: url("./images/photo-profile/self.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30em;
 }
 
 #welcome-section h1 {
