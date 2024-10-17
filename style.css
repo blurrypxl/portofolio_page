@@ -290,6 +290,7 @@ body {
   }
 }
 
+#about-me,
 #projects,
 #contact-section {
   /* border: 1px solid blue; */
@@ -306,12 +307,14 @@ body {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.123);
 }
 @media (min-width: 768px) {
+  #about-me,
   #projects,
   #contact-section {
     width: 720px;
   }
 }
 @media (min-width: 1024px) {
+  #about-me,
   #projects,
   #contact-section {
     width: 950px;
@@ -352,21 +355,30 @@ body {
 }
 
 .photo-profile {
-  border-radius: 50%;
-  width: 8em;
+  /* border-radius: 50%; */
+  border: 1px solid black;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 20em;
+  height: 20em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #welcome-section h1 {
-  font-weight: lighter;
-  color: var(--grey);
+  /* font-weight: lighter; */
+  font-weight: normal;
+  color: var(--black);
+  /* color: var(--grey); */
   text-align: center;
+  font-size: 1.3em;
 }
 
-#welcome-section p {
+/* #welcome-section p {
   font-weight: normal;
   font-size: 1.3em;
   color: var(--black);
-}
+} */
 
 .social {
   /* border: 1px solid blueviolet; */
@@ -387,6 +399,15 @@ body {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.123);
 }
 
+#about-me {
+  border-top: 10px solid var(--red);
+  margin-top: 4em;
+}
+
+.about {
+  padding: 2em;
+}
+
 #projects {
   border-top: 10px solid var(--blue);
   margin-top: 4em;
@@ -398,7 +419,9 @@ body {
 .project-tile {
   /* border: 1px solid black; */
   border-top: 1px solid rgba(179, 179, 179, 0.671);
-  padding: 1em;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -407,6 +430,9 @@ body {
 .project-tile h2 {
   font-size: 1em;
   text-align: center;
+  margin-bottom: 1em;
+}
+.project-tile h3 {
   margin-bottom: 1em;
 }
 
