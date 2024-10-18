@@ -356,7 +356,7 @@ body {
 
 .photo-profile {
   /* border-radius: 50%; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   width: 20em;
@@ -445,15 +445,20 @@ body {
   text-align: center;
   margin-top: 1em;
 }
-.description p, .description h3 {
+.description p, .description h4 {
   font-size: 0.9em;
 }
-.description h3 {
+.description h4 {
   font-weight: bold;
+  margin-bottom: 1em;
 }
 .description p a {
   font-weight: bold;
   color: var(--red);
+}
+
+.text-left {
+  text-align: left;
 }
 
 .project-mobile {
